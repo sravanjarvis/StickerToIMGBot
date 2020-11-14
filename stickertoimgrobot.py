@@ -36,7 +36,7 @@ async def handle_message(hmm: events.NewMessage.Event):
         replied_user = await hmm.client(GetFullUserRequest(hmm.sender_id))
         firstname = replied_user.user.first_name
         vent = hmm.chat_id
-        oki = f"**Hey {firstname} !** \n`Send Me A Image Or sticker I Will Resize And Convert To Creatable Sticker It Send It To You` \n**(c) @STARKGANG**"
+        oki = f"**Hey {firstname} !** \n`Send Me A Image Or sticker I Will Resize And Convert To Creatable Sticker It Send It To You`"
         await hmm.reply(oki)
 
 
